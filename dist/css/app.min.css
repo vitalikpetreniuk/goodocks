@@ -33,7 +33,9 @@ textarea {
   resize: horizontal
 }
 .pos-fixed {
-  overflow: hidden
+  overflow: hidden;
+  position: fixed;
+  width: 100vw
 }
 .img-wrapper img {
   width: 100%;
@@ -116,16 +118,19 @@ textarea {
   justify-content: space-between;
   display: flex
 }
-.header .center-block .menu-block .img-wrapper {
+.header .center-block .menu-block .img-wrapper,
+.header .center-block-2 .menu-block .img-wrapper {
   margin-right: 10px
 }
-.header .center-block .menu-block .menu a {
+.header .center-block .menu-block .menu a,
+.header .center-block-2 .menu-block .menu a {
   line-height: 16px;
   color: #3b3b3b;
   display: flex;
   align-items: center
 }
-.header .center-block .menu-block .menu > a:after {
+.header .center-block .menu-block .menu > a:after,
+.header .center-block-2 .menu-block .menu > a:after {
   content: "";
   display: inline-block;
   margin-left: 7px;
@@ -589,6 +594,9 @@ textarea {
   .menu:hover .subm-wrapper {
     display: block
   }
+  .header .center-block-2 {
+    display: none!important
+  }
 }
 @media (max-width:992px) {
   .main .top-block .top-search-block .search-form {
@@ -605,6 +613,9 @@ textarea {
     padding: 13px
   }
   .header .center-block {
+    display: none
+  }
+  .header .center-block-2 {
     width: 100%;
     background-color: #fff;
     flex-direction: column;
@@ -618,19 +629,19 @@ textarea {
     overflow-x: scroll;
     display: none
   }
-  .header .center-block .menu-block {
+  .header .center-block-2 .menu-block {
     width: 100%;
     justify-content: center;
     padding: 20px 0;
     box-shadow: none
   }
-  .header .center-block .beam {
+  .header .center-block-2 .beam {
     display: block
   }
   .header .right-block .button {
     display: none
   }
-  .header .center-block .button {
+  .header .center-block-2 .button {
     display: flex;
     justify-content: center;
     position: fixed;
@@ -638,28 +649,28 @@ textarea {
     width: 100%;
     z-index: 111
   }
-  .subm-wrapper {
+  .header .center-block-2 .subm-wrapper {
     position: relative;
     padding: 0
   }
-  .sub-menu {
+  .header .center-block-2 .sub-menu {
     position: relative;
     margin-top: 0;
     width: 100vw;
     box-shadow: none
   }
-  .sub-menu .menu {
+  .header .center-block-2 .sub-menu .menu {
     width: 100%
   }
-  .sub-menu ul {
+  .header .center-block-2 .sub-menu ul {
     flex-direction: column;
     width: 100%;
     align-items: center
   }
-  .sub-menu ul li {
+  .header .center-block-2 .sub-menu ul li {
     width: 100%
   }
-  .header .center-block .menu-block .menu a {
+  .header .center-block-2 .menu-block .menu a {
     display: flex;
     justify-content: center;
     align-items: center
