@@ -527,6 +527,11 @@ textarea {
   line-height: 23px;
   color: #3b3b3b
 }
+.card-main .card-main__info .main-info__bottom .how-td .points .point-block .point-text div:nth-of-type(2) a {
+  line-height: 23px;
+  color: #3b3b3b;
+  text-decoration: underline
+}
 .card-main .card-main__info .main-info__bottom .how-td .points .points-img {
   padding-top: 10px
 }
