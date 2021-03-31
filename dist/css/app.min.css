@@ -58,9 +58,6 @@ textarea {
   left: 0;
   z-index: 11
 }
-.menu:hover .subm-wrapper {
-  display: block
-}
 .sub-menu ul {
   list-style: none;
   display: flex;
@@ -425,7 +422,8 @@ textarea {
 }
 .card-carousel_doc .owl-nav button {
   width: 36px;
-  height: 36px
+  height: 36px;
+  border-radius: 50%
 }
 .card-carousel_doc .owl-nav button span {
   display: none
@@ -586,6 +584,11 @@ textarea {
 }
 .center.click div {
   transform: scale(0)
+}
+@media (min-width:993px) {
+  .menu:hover .subm-wrapper {
+    display: block
+  }
 }
 @media (max-width:992px) {
   .main .top-block .top-search-block .search-form {
