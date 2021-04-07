@@ -595,6 +595,41 @@ textarea {
 .center.click div {
   transform: scale(0)
 }
+.top-block.index-2 {
+  margin-bottom: 20px
+}
+.index-2 .bottom-text-block .bottom-text p {
+  margin-bottom: 15px
+}
+.index-2 .bottom-text {
+  margin-bottom: 40px
+}
+.index-2 .bottom-text-block .bottom-header h2 {
+  font-size: 24px;
+  font-weight: 400
+}
+.index-2 .bottom-text-block .bottom-header h3 {
+  font-size: 22px
+}
+.index-2 .main-header h1 {
+  font-size: 30px;
+  font-weight: 400
+}
+.index-2 .bottom-text-block .bottom-header h2 {
+  font-size: 22px
+}
+.index-2 .bottom-text-block ol li,
+.index-2 .bottom-text-block ul li {
+  line-height: 26px;
+  margin-bottom: 7px
+}
+.index-2 .bottom-text-block ol,
+.index-2 .bottom-text-block ul {
+  margin-bottom: 15px
+}
+.index-2 .bottom-text-block ul {
+  padding-left: 40px
+}
 @media (min-width:993px) {
   .menu:hover .subm-wrapper {
     display: block
