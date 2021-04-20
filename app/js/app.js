@@ -7,26 +7,27 @@ $(document).ready(function(){
     if($("#slider").length > 0)
     {
         const slider = $("#slider").owlCarousel({
-            loop:true,
+            loop:false,
             nav:true,
             items:1,
             dots:true
+        });
+        $("a.gallery").fancybox({
         });
     }
     if($("#slider2").length > 0)
     {
         const slider2 = $("#slider2").owlCarousel({
             margin: 15,
-            loop:true,
+            loop:false,
             nav:true,
             dotsEach:true,
             items:2,
             dots:true
         });
+        $("a.gallery").fancybox({
+        });
     }
-
-    /*$("a.gallery").fancybox({
-    });*/
 
     $('.owl-dot').each(function(){
         $(this).children('span').text($(this).index()+1);
@@ -47,6 +48,8 @@ $(document).ready(function(){
                     $(this).toggleClass("click")
                     $(" .header .center-block-2 ").toggle();
                     $(" body ").toggleClass("pos-fixed");
+                    $(" .subm-wrapper ").hide();
+                    $(".center-block-2 .menu > a .arr1").removeClass("opened");
                 });
             }
             f_click = true;
