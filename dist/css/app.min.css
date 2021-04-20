@@ -129,15 +129,20 @@ textarea {
   display: flex;
   align-items: center
 }
-.header .center-block .menu-block .menu > a:after,
-.header .center-block-2 .menu-block .menu > a:after {
+.header .center-block .menu-block .menu > a .arr1,
+.header .center-block-2 .menu-block .menu > a .arr1 {
   content: "";
   display: inline-block;
   margin-left: 7px;
   height: 6px;
   width: 8px;
   position: relative;
-  background: url(../images/dest/arrow_green.png) no-repeat center
+  background: url(../images/dest/arrow_green.svg) no-repeat center;
+  transition: .4s
+}
+.arr1.opened,
+.header .center-block .menu-block .menu > a:hover .arr1 {
+  transform: rotate(180deg)
 }
 .header .right-block {
   height: -webkit-fit-content;
@@ -174,15 +179,30 @@ textarea {
   height: 50px;
   position: relative
 }
+.search-form .form-subm {
+  cursor: pointer;
+  font-size: 16px;
+  right: 0;
+  background: 0 0;
+  border-radius: 5px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none
+}
 .search-form .fa-search {
   color: #ffff;
   font-size: 18px;
-  cursor: pointer;
-  font-size: 16px;
   right: 0;
   background: #4ad295;
   border-radius: 5px;
   position: absolute;
+  width: 50px;
+  height: 50px;
   width: 50px;
   height: 50px;
   top: 0;
@@ -641,7 +661,7 @@ textarea {
 @media (max-width:992px) {
   .main .top-block .top-search-block .search-form {
     width: 70%;
-    z-index: -1
+    z-index: 1
   }
   .download-block {
     margin-bottom: 32px
